@@ -1,0 +1,5 @@
+payment_id,invoice_id,payment_date,amount,payment_method
+1,101,2026-09-10,500,Bank transfer
+2,101,2026-09-20,450,Card
+3,102,2026-10-05,300,Online
+4,104,2026-10-07,100,Cash
