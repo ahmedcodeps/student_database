@@ -1,0 +1,27 @@
+{
+  "add_score_request": {
+    "student_id": 101,
+    "assessment_id": 3,
+    "score": 91.5
+  },
+  "add_score_response": {
+    "student_id": 101,
+    "student_name": "Aisha Rahman",
+    "assessment_id": 3,
+    "assessment_name": "Geometry Test",
+    "subject": "Mathematics",
+    "score": 91.5,
+    "max_score": 100
+  },
+  "update_score_request": {
+    "score": 94
+  },
+  "average_response": {
+    "student_id": 101,
+    "student_name": "Aisha Rahman",
+    "average_percentage": 91
+  },
+  "error_response": {
+    "detail": "Score cannot exceed the assessment maximum"
+  }
+}

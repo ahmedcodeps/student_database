@@ -1,0 +1,101 @@
+{
+  "info": {
+    "name": "Student Results API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "teacher",
+        "type": "string"
+      },
+      {
+        "key": "password",
+        "value": "demo123",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:8000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Get Subjects",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/subjects"
+      }
+    },
+    {
+      "name": "Get Assessments",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/assessments"
+      }
+    },
+    {
+      "name": "Add Score",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"student_id\": 101,\n  \"assessment_id\": 3,\n  \"score\": 91.5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/scores"
+      }
+    },
+    {
+      "name": "Update Score",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"score\": 94\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/scores/101/3"
+      }
+    },
+    {
+      "name": "Get Student Results",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/students/101/results"
+      }
+    },
+    {
+      "name": "Get Student Average",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/students/101/average"
+      }
+    }
+  ]
+}
