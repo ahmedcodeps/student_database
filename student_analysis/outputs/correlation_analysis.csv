@@ -1,0 +1,7 @@
+,Hours_Studied,Attendance,Sleep_Hours,Previous_Scores,Tutoring_Sessions,Exam_Score
+Hours_Studied,1.0,-0.01,0.011,0.025,-0.014,0.445
+Attendance,-0.01,1.0,-0.016,-0.02,0.014,0.581
+Sleep_Hours,0.011,-0.016,1.0,-0.022,-0.012,-0.017
+Previous_Scores,0.025,-0.02,-0.022,1.0,-0.013,0.175
+Tutoring_Sessions,-0.014,0.014,-0.012,-0.013,1.0,0.157
+Exam_Score,0.445,0.581,-0.017,0.175,0.157,1.0
