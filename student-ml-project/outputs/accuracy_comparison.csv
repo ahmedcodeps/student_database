@@ -1,0 +1,4 @@
+Model,Test Accuracy
+Logistic Regression,0.9924357034795764
+Decision Tree,0.9909228441754917
+Baseline,0.989409984871407
